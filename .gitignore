@@ -40,4 +40,5 @@ Temporary Items
 *.sass.map
 *.scss.map
 
+prepros.config
 # End of https://www.toptal.com/developers/gitignore/api/macos,sass
