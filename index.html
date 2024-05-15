@@ -11,20 +11,28 @@
 
 
 <body>
-    <h1>MAIN PAGE</h1>
-
-    <header>
-        <img src="assets/img/logo.png" alt="logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/blog.html">News & Approfondimenti</a></li>
-                <li><a href="pages/contatti.html" class="button menu-button">Contattami</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container grid">
+            <img src="assets/img/logo.png" alt="logo" class="logo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="btn--btn-primary">Home</a></li>
+                    <li><a href="pages/blog.html" class="btn--btn-primary">News & Approfondimenti</a></li>
+                    <li><a href="pages/contatti.html" class="btn--btn-secondary">Contattami</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-subtitle">Studio Legale</h2>
+            <h1 class="hero-title">Avvocato Riccardo Scagnetti</h1>
+            <p class="hero-parag">Summus ius summa iniuria</p>
+            <a href="" class="btn hero-button">Informazioni</a>
+        </div>
+    </section>
+    
     <section class="home-about-me">
         <div class="container">
             <h1>Su di me</h1>
@@ -36,7 +44,7 @@
             <p><span>Riccardo Scagnetti</span></p>
         </div>
         <img src="assets/img/bio-photo.jpg" alt="photo bio" class="bio-photo">
-        <a href="" class="button info-button">Informazioni</a>
+        <a href="" class="btn info-button">Informazioni</a>
     </section>
 
 

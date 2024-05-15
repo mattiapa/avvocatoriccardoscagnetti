@@ -1,0 +1,111 @@
+html {
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: rgb(255, 255, 255);
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 0.75;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  width: 15%;
+  min-width: 6rem;
+  max-width: 20rem;
+}
+
+.main-nav {
+  width: 60%;
+  display: none;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(#78633a), to(rgb(0, 0, 0)));
+  background: linear-gradient(#78633a, rgb(0, 0, 0));
+  color: rgb(255, 255, 255);
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 2em;
+  background-color: pink;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:not(:last-of-type) {
+  margin-bottom: 0.6em;
+}
+
+.btn--primary {
+  background: pink;
+}
+
+.btn--secondary {
+  background: yellow;
+}
+
+.hero-button {
+  background-color: rgb(180, 153, 100);
+  color: rgb(255, 255, 255);
+  border: 0.3px solid rgb(255, 255, 255);
+  border-radius: 2%;
+}
