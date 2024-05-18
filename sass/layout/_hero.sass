@@ -1,9 +1,29 @@
 .hero
-    background: linear-gradient(darken($accent, 20%), $black)
-    color: $text-inverse
-
-    padding-top: 8em
-    padding-bottom: 8em
-
+    background: yellow
+    padding-top: 10rem
+    padding-bottom: 4rem
     text-align: center
 
+    @media(min-width: 725px)
+        //padding: 3em 3em
+        //padding-bottom: 0
+        //height: 50vmin
+        min-height: 800px
+
+    .hero-text
+        @media(min-width: 725px)
+            margin-top: 10vmax
+
+.hero-line
+    content: ''
+    display: block
+    height: 1px
+    background: $text-color
+    //margin: 1.5rem auto -1.2rem
+    width: 50%
+    margin: auto auto
+
+.hero-parag
+    font-weight: $text-light
+    font-style: italic
+    margin: 3rem
