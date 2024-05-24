@@ -1,13 +1,23 @@
 .main-nav
-    background-color: $primary
+    background-color: $accent
     position: absolute
     top: 0
     left: 100%
     right: 0
-    font-size: 1.2rem
+    font-size: 1rem
     overflow: hidden
 
     transition: all ease-in-out 250ms
+
+    @media(min-width: 725px)
+        position: relative
+        flex: auto
+        background: none
+        margin-top: 2.25em
+        margin-left: 20em
+        left: 0
+        text-align: right
+        
 
     ul
         display: flex
@@ -15,10 +25,18 @@
         justify-content: space-around
         height: 100vh
 
+        @media(min-width: 725px)
+            flex-direction: row
+            height: auto
+
     li
         flex: 1 1 auto
         border-bottom: 1px solid rgba(0, 0, 0, .2)
         display: flex
+        @media(min-width: 725px)
+            display: inline-block
+            border: none
+            text-align: right
 
     a
         color: $text-inverse
@@ -27,10 +45,17 @@
         display: flex
         align-items: center
         justify-content: center
-        
+        @media(min-width: 725px)
+            display: inline
+
+
         &:hover
             background: rgba(0, 0, 0, .1)
-        
+            @media(min-width: 725px)
+                background: none
+                color: darken($text-inverse, 40%)
+                transition: all ease-in-out 250ms
+
 
     &.is-open
         left: 0
@@ -46,6 +71,8 @@
     right: 1em
     top: 1em
     cursor: pointer
+    @media(min-width: 725px)
+        display: none
 
 
 .hamburger, .hamburger::before, .hamburger::after
@@ -55,6 +82,7 @@
     height: 3px
     background: $text-inverse
     transition: all ease-in-out 250ms
+    color: $primary
 
 .hamburger::before
     transform: translateY(-6px)

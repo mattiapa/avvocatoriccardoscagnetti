@@ -3,10 +3,16 @@
     top: 0
     left: 0
     right: 0
-    background-color: rgba(255, 193, 203, .6)
+    background-color: rgba($accent, 1)
+    //background-color: $text-inverse
     padding-top: 1em
 
+    @media (min-width: 725px)
+        position: fixed
+
+
 .logo
-    width: 15%
+    width: 7%
     min-width: 6rem
     max-width: 20rem
+    padding-bottom: 1em
