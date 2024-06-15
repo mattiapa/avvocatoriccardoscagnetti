@@ -7,158 +7,248 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Studio Legale Avvocato Riccardo Scagnetti</title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<!--=============== FAVICON ===============-->
+<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+<!--=============== REMIXICONS ===============-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 
 <body>
-    <header class="main-header">
-        <div class="container grid">
-            <img src="assets/img/logo.png" alt="logo" class="logo">
-            <nav class="main-nav">
-                <ul class="unstyled-list">
-                    <li><a href="index.html" class="btn--btn-primary">Home</a></li>
-                    <li><a href="pages/blog.html" class="btn--btn-primary">News & Approfondimenti</a></li>
-                    <li><a href="pages/contatti.html" class="btn--btn-secondary">Contattami</a></li>
-                </ul>
-            </nav>
+    <header class="home-header">
+        <div class="container">
+            <div class="nav-wrapper" id="nav-wrapper">
+                
+                <!-- Header Logo -->
+                <div class="logo">
+                    <a href="#"><svg class="logo-img"</svg></a>
+                </div>
 
-            <div class="nav-toggle">
-                <div class="hamburger"></div>
+                <!-- Navigation menu -->
+                <nav class="main-nav">
+                    <ul class="unstyled-list">
+                        <li><a class="nav-item" href="#">Home</a></li>
+                        <li><a class="nav-item" href="#">News & Approfondimenti</a></li>  <!-- href to pages/blog.index -->
+                        <li><a class="nav-item" href="#">Contattami</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Toggle-->
+                <div class="nav-toggle", id="tav-toggle"> 
+                    <div class="hamburger"></div>
+                </div>
+
             </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-text">
-            <h2 class="hero-subtitle">Studio Legale</h2>
-            <div class="hero-line"></div>
-            <h1 class="hero-title">Avvocato Riccardo Scagnetti</h1>
-            <p class="hero-parag">Summus ius summa iniuria</p>
-            <a href="" class="btn hero-button">Informazioni</a>
-        </div>
-    </section>
-    
-    <section class="home-about-me">
-        <div class="container grid">
-            <h1 class="col col--full">Su di me</h1>
-            <div class="home-about-me col col--2-3-about">
-                <h2>Avvocato Riccardo Scagnetti</h2>
-                <p>Nato il 2 ottobre 1993 a Macerata, diplomato al Liceo Classico C. Varano di Camerino nel 2012, Laurea Magistrale in Giurisprudenza presso l’Università di Macerata nell’anno 2017 con tesi intitolata “Il principio di trasparenza e la sua evoluzione”, per cui ha ottenuto il massimo punteggio, diploma di Specializzazione in Professioni Legali presso l’Università di Macerata nell’anno 2020 con massimo dei voti.</p>
-                <p>Presente nelle aule di giustizia sin dal 2017 come Praticante Avvocato, acquisisce l’Abilitazione al Patrocinio Sostitutivo in data 10 settembre 2018. Iscritto all’albo dell’Ordine degli Avvocati di Macerata con delibera del 17 gennaio 2022. Attualmente sta frequentando il corso biennale tenuto dalla Camera Penale di Roma intitolato “Corso di formazione tecnica e deontologica dell’avvocato penalista”. </p>
-                <p>Durante gli anni di pratica legale, grazie ai rapporti di proficua collaborazione instaurata con importanti Studi Legali della zona e della capitale ha potuto partecipare a difese in processi di risonanza nazionale per gravissimi reati contro la persona, omicidi, terrorismo internazionale e associazione a delinquere.</p>
-                <p>Collabora da anni con Avvocati specializzati in diritto civile, diritto del lavoro, responsabilità medica, infortunistica stradale, controversie condominiali e tributarie.</p>
-                <p><span>Riccardo Scagnetti</span></p>
+
+    <main>
+
+
+        <section class="perfil">
+            <div class="background">
+
+                <div class="home-perfil container">
+
+                    <div class="home-perfil-wrapper">
+                        <div class="perfil-image">
+                            <div class="img-background"></div>
+                            <img src="assets/img/bio-circle.png" alt="" class="home__img">
+                        </div>
+                        
+                        <div class="perfil--social-links">
+                            <a href="#" target="_blank" class="roundbutton">
+                                <!-- <i class="ri-instagram-line"></i> -->
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="roundbutton">
+                                <!-- <i class="ri-linkedin-box-fill"></i> -->
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                
+                            </a>
+
+                            <a href="#" target="_blank" class="roundbutton">
+                                <!-- <i class="ri-facebook-circle-fill"></i> -->
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="perfil-info">
+                        <h1 class="perfil-title">Studio Legale</h1>
+                        <div class="line"></div>
+                        <h2 class="perfil-subtitle">Avvocato Riccardo Scagnetti</h2>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-double-fill"></i>
+                        </div>
+                        <span class="home__scroll-text">Scroll down</span>
+                    </a>
+
+                </div>
             </div>
-            <div class="home-about-me col col--1-3-about">
-                <img src="assets/img/bio-photo.jpg" alt="photo bio" class="bio-photo">
-            </div>
-        </div>
-    </section>
 
-    <section class="home-servizi">
-        <div class="container grid">
-            <h1 class="col col--full">Servizi</h1>
+        </section>
+        
 
-            <div class="home-servizio col col--1-3">
-                <img src="" alt="servizi-icon", class="home-servizi-icon">
-                <h2>Diritto penale e dell'esecuzione penale</h1>
-                <p>Lo Studio mette a disposizione degli assistiti la propria esperienza pluriennale nell’ambito del diritto penale, seguendo imputati, indagati e persone offese sin dalle prime fasi del processo, poiché è proprio in tali frangenti che l’assistenza di un difensore assume particolare rilevanza. Stante la particolare delicatezza delle questioni che un procedimento penale fa emergere, lo scopo dello Studio è quello di accompagnare l’assistito/a durante tutto il percorso processuale con sincerità, empatia e professionalità, al fine di minimizzare le ripercussioni negative e garantendo, a prescindere dalla gravità dei fatti addebitati o subiti, una difesa tecnica tenace e determinata.</p>
-            </div>
-
-            <div class="home-servizio col col--1-3">
-                <img src="" alt="servizi-icon", class="home-servizi-icon">
-                <h2>Diritto civile e del lavoro</h1>
-                <p>Lo Studio fornisce assistenza e consulenza sia giudiziale che stragiudiziale a persone fisiche e persone giuridiche nella gestione di vicende civilistiche e di vertenze giuslavoristiche. Il tutto ponendo particolare attenzione alle modalità di definizione stragiudiziale delle controversie (ADR), che permettono di ottenere risultati certi, in tempi immediati e con minori costi. Con riguardo alla materia giuslavoristica si fornisce assistenza a lavoratori, privati ed imprese nella gestione dei rapporti di lavoro, a partire dalla nascita sino alla conclusione, sia essa pacifica o contenziosa. La tutela del diritto al lavoro ed alla retribuzione viene garantita tramite assodate procedure di recupero crediti, celeri e con costi contenuti.</p>
-            </div>
-
-            <div class="home-servizio col col--1-3">
-                <img src="" alt="servizi-icon", class="home-servizi-icon">
-                <h2>Diritto internazionale privato</h1>
-                <p>Si mette a disposizione degli assistiti la competenza ed esperienza di professionisti formati nella materia del diritto privato internazionale, garantendo un’assistenza sia stragiudiziale che giudiziale, innanzi alle corti italiane ed estere. Le aziende ed i privati seguiti dallo Studio vengono muniti di contrattualistica personalizzata in base alle esigenze del singolo, al fine di disciplinare sin da subito in modo chiaro e puntuale i rapporti con i clienti esteri, così scongiurando future controversie da gestire in territorio internazionale, con costi e tempistiche di gran lunga superiori alla norma.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="home-choice">
-        <h1 class="title-box">Perché scegliere lo studio</h1>
-        <h2>Assistenza e consulenza legale</h2>
-        <p>Lo Studio fornisce assistenza e consulenza in ambito stragiudiziale e giudiziale principalmente nell’ambito del diritto penale, civile e del lavoro. Lo Studio vanta altresì collaborazioni con professionisti esperti nell’infortunistica stradale, in pratiche di malasanità, in contenziosi tributari ed in controversie condominiali. La “mission” della struttura consiste nell’offrire prestazioni professionali di alto livello, con approccio moderno e pragmatico, avendo come principale obiettivo la tempestiva tutela delle ragioni dell’assistito/a.</p>
-    </section>
-
-
-    <section class="numbers">
-        <h1>In sintesi</h1>
-        <h2>Alcuni numeri</h2>
-        <div class="cases">Casi TODO</div>
-        <div class="clients">Clienti TODO</div>
-    </section>
-
-    <section class="home-collegues">
-        <h1>Servizi</h1>
-        <h2>Per i colleghi</h2>
-        <div class="home-collegues-1">
-            <p>Lo studio offre ai Colleghi che necessitino di un sostituto processuale o di svolgere adempimenti di cancelleria ed estratti di ruolo un servizio di domiciliatari presenti su tutto il territorio marchigiano. Nello specifico si offrono domiciliazioni con o senza attività di sostituzione in udienza presso gli Uffici Giudiziari di Ancona, Macerata, Fermo, Camerino, Ascoli Piceno, Pesaro e Urbino.</p>
-        </div>
-        <div class="home-collegues-2">
-            <p>Il servizio permette, previa verifica dell’esistenza di incompatibilità con l’assunzione dell’incarico, di richiedere una sostituzione in udienza per ogni genere di procedimento civile, penale, amministrativo, tributario e del lavoro.</p>
-        </div>
-    </section>
-
-
-    <footer class="footer home-footer">
-        <div class="container grid container-footer">
-            <div class="col col--1-2 footer home-footer-1">
-                <h2 class="footer-title">Come trovarci</h2>
-                <ul class="unstyled-list">
-                    <li><a href=""><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></a></li>
-                    <li>Studio Legale Avv. Riccardo Scagnetti</li>
-                    <li>via Ancona, 188</li>
-                    <li>62100, Macerata (MC)</li>
-                </ul>
-            </div>
-            <div class="col col--1-2 footer home-footer-2">
-                <h2 class="footer-title">Contatti</h2>
-                <ul class="unstyled-list">
-                    <li><a href=""><i class="fa-solid fa-phone" aria-hidden="true"></i></a></li>
-                    <li>+39 345 604 2057</li>
-                    <li><a href=""><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
-                    <li>avv.riccardoscagnetti@gmail.com</li>
+        <section class="home-about-me">
+            <!-- <div class="home-about-me-background-image">
+                <img src="assets/img/home-bio-no-bg.png"></img>
+            </div> -->
+            <div class="background">
+                <div class="home-about-me-container container">
                     
-                </ul>
-            </div>
-            
-            <div class="col col--full sfooter home-footer-3 col col--full">
-                <ul class="unstyled-list social-links">
-                    <li><a href=""><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+                    <h1 class>Su di me</h1>
+                    <div class="line"></div>
+                    <h2 class>Avvocato Riccardo Scagnetti</h2>
+                        
+                    <div>
+                        <p class="grid-item">Nato il 2 ottobre 1993 a Macerata, diplomato al Liceo Classico C. Varano di Camerino nel 2012, Laurea Magistrale in Giurisprudenza presso l’Università di Macerata nell’anno 2017 con tesi intitolata “Il principio di trasparenza e la sua evoluzione”, per cui ha ottenuto il massimo punteggio, diploma di Specializzazione in Professioni Legali presso l’Università di Macerata nell’anno 2020 con massimo dei voti.</p>
+                        <p class="grid-item">Presente nelle aule di giustizia sin dal 2017 come Praticante Avvocato, acquisisce l’Abilitazione al Patrocinio Sostitutivo in data 10 settembre 2018. Iscritto all’albo dell’Ordine degli Avvocati di Macerata con delibera del 17 gennaio 2022. Attualmente sta frequentando il corso biennale tenuto dalla Camera Penale di Roma intitolato “Corso di formazione tecnica e deontologica dell’avvocato penalista”.</p>
+                        <p class="grid-item">Durante gli anni di pratica legale, grazie ai rapporti di proficua collaborazione instaurata con importanti Studi Legali della zona e della capitale ha potuto partecipare a difese in processi di risonanza nazionale per gravissimi reati contro la persona, omicidi, terrorismo internazionale e associazione a delinquere.</p>
+                        <p class="grid-item">Collabora da anni con Avvocati specializzati in diritto civile, diritto del lavoro, responsabilità medica, infortunistica stradale, controversie condominiali e tributarie.</p>
+                        <span class="sign">Avv. Riccardo Scagnetti</span>
+                    </div>
 
-            <div class="col col-full unstyled-list">
-                <li><a href="assets/Informativa-privacy.pdf" class="Informativa-privacy">Informativa privacy</a></li>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </footer>
+        <section class="home-services">
+
+            <div class="background">
+                <div class="container home-services-init">
+                
+                    <div class="home-services--title">
+                        <h1 class>Servizi</h1>
+                        <div class="line"></div>
+                        <h2 class>Di che cosa mi occupo</h2>
+                    </div>
+
+                    <div class="grid home-services-grid">
+                        <div class="item">
+                            <div class="geometric_box">
+                                <div class="services-icon"><i class="fa-solid fa-handcuffs"></i></div>
+                                <h2 class="services-title">Diritto Penale e dell'esecuzione penale</h2>
+                                <p>Lo Studio mette a disposizione degli assistiti la propria esperienza pluriennale nell’ambito del diritto penale, seguendo imputati, indagati e persone offese sin dalle prime fasi del processo, poiché è proprio in tali frangenti che l’assistenza di un difensore assume particolare rilevanza. Stante la particolare delicatezza delle questioni che un procedimento penale fa emergere, lo scopo dello Studio è quello di accompagnare l’assistito/a durante tutto il percorso processuale con sincerità, empatia e professionalità, al fine di minimizzare le ripercussioni negative e garantendo, a prescindere dalla gravità dei fatti addebitati o subiti, una difesa tecnica tenace e determinata.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="geometric_box">
+                                <div class="services-icon"><i class="fa-solid fa-building-columns"></i></div>
+                                <h2 class="services-title">Diritto civile e del</h2>
+                                <h2 class="services-title">lavoro</h2>
+                                <p>Lo Studio fornisce assistenza e consulenza sia giudiziale che stragiudiziale a persone fisiche e persone giuridiche nella gestione di vicende civilistiche e di vertenze giuslavoristiche. Il tutto ponendo particolare attenzione alle modalità di definizione stragiudiziale delle controversie (ADR), che permettono di ottenere risultati certi, in tempi immediati e con minori costi. Con riguardo alla materia giuslavoristica si fornisce assistenza a lavoratori, privati ed imprese nella gestione dei rapporti di lavoro, a partire dalla nascita sino alla conclusione, sia essa pacifica o contenziosa. La tutela del diritto al lavoro ed alla retribuzione viene garantita tramite assodate procedure di recupero crediti, celeri e con costi contenuti.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="geometric_box">
+                                <div class="services-icon"><i class="fa-solid fa-earth-europe"></i></div>
+                                <h2 class="services-title">Diritto internazionale</h2>
+                                <h2 class="services-title">privato</h2>
+                                <p>Si mette a disposizione degli assistiti la competenza ed esperienza di professionisti formati nella materia del diritto privato internazionale, garantendo un’assistenza sia stragiudiziale che giudiziale, innanzi alle corti italiane ed estere. Le aziende ed i privati seguiti dallo Studio vengono muniti di contrattualistica personalizzata in base alle esigenze del singolo, al fine di disciplinare sin da subito in modo chiaro e puntuale i rapporti con i clienti esteri, così scongiurando future controversie da gestire in territorio internazionale, con costi e tempistiche di gran lunga superiori alla norma.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-why">
+            <div class="background">
+                <div class="container home-why-container">
+                    <h1 class>Perché scegliere lo studio</h1>
+                    <div class="line"></div>
+                    <h2 class>Assistenza e consulenza legale</h2>
+                    <p>Lo Studio fornisce assistenza e consulenza in ambito stragiudiziale e giudiziale principalmente nell’ambito del diritto penale, civile e del lavoro. Lo Studio vanta altresì collaborazioni con professionisti esperti nell’infortunistica stradale, in pratiche di malasanità, in contenziosi tributari ed in controversie condominiali. La “mission” della struttura consiste nell’offrire prestazioni professionali di alto livello, con approccio moderno e pragmatico, avendo come principale obiettivo la tempestiva tutela delle ragioni dell’assistito/a.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-collegues">
+            <div class="background">
+                <div class="container home-collegues-container">
+                    <h1 class>Servizi</h1>
+                    <div class="line"></div>
+                    <h2 class>Per i colleghi</h2>
+
+                    <div class="column--1-2">
+                        <p>Lo studio offre ai Colleghi che necessitino di un sostituto processuale o di svolgere adempimenti di cancelleria ed estratti di ruolo un servizio di domiciliatari presenti su tutto il territorio marchigiano. Nello specifico si offrono domiciliazioni con o senza attività di sostituzione in udienza presso gli Uffici Giudiziari di Ancona, Macerata, Fermo, Camerino, Ascoli Piceno, Pesaro e Urbino.</p>
+                    </div>
+
+                    <div class="column--1-2">
+                        <p>Il servizio permette, previa verifica dell’esistenza di incompatibilità con l’assunzione dell’incarico, di richiedere una sostituzione in udienza per ogni genere di procedimento civile, penale, amministrativo, tributario e del lavoro. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer home-footer">
+
+            <div class="container footer-grid">
+                
+                <div class="footer-grid-item">
+                    <h2 class="footer-title">Come trovarci</h2>
+                    <ul class="unstyled-list">
+                        <li><a href="https://maps.app.goo.gl/PUvnQBWDYGeF3R3Y7"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></a></li>
+                        <li>Studio Legale Avv. Riccardo Scagnetti</li>
+                        <li>via Ancona, 188</li>
+                        <li>62100, Macerata (MC)</li>
+                    </ul>
+                </div>
+
+                <div class="footer-grid-item">
+                    <h2 class="footer-title">Contatti</h2>
+                    <ul class="unstyled-list">
+                        <li><a href=""><i class="fa-solid fa-phone" aria-hidden="true"></i></a></li>
+                        <li>+39 345 604 2057</li>
+                        <li><a href=""><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
+                        <li>avv.riccardoscagnetti@gmail.com</li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="footer-grid-item">
+                    <ul class="unstyled-list social-links">
+                        <li><a href=""><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
     
+                <div class="unstyled-list footer-grid-item privacy">
+                    <li><a href="assets/Informativa-privacy.pdf" class="Informativa-privacy">Informativa privacy</a></li>
+                </div>
+    
+            </div>
+        </footer>
 
-<!-- jQuery-->
-<script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous">
-</script>
+    </main>
 
-<!-- Fontawesome-->
-<script src="https://kit.fontawesome.com/f163ad25ac.js" crossorigin="anonymous"></script>
+    
+    <!-- Fontawesome-->
+    <script src="https://kit.fontawesome.com/f163ad25ac.js" crossorigin="anonymous"></script>
 
-<!-- custom scripts-->
-<script src="js/scripts.js"></script>
-
-
+    <!-- custom scripts-->
+    <script src="js/scripts.js"></script>
 
 </body>
 
