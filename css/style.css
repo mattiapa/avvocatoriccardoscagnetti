@@ -519,6 +519,13 @@ animation: scroll-down 1.5s infinite;
 .home-why-container{
     padding: 3rem 0;
 }
+.home-why-background{
+    background: url("../assets/img/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg") repeat fixed 100%;
+    /* width:80%;  */
+    /* height:80%; */
+    background-size:cover;
+    /* height: 10rem; */
+}
 
 
 
