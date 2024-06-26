@@ -163,7 +163,7 @@ p {
 
 }
 .blog-post-wrapper{
-    max-width: 70%;
+    max-width: 60%;
     margin: auto;
 }
 
@@ -208,7 +208,9 @@ p {
 
 .post-content {
     margin-top: 1.5rem;
+    text-align: justify;
 }
+
 .post-content p{
     font-size: 1.05rem;
 }
@@ -224,4 +226,23 @@ p {
 
 span {
     font-weight: 700;
+}
+
+.disclaimer {
+    font-size: .6rem;
+    font-style: italic;
+    text-align: justify;
+    margin-top: 3rem;
+}
+
+@media (max-width: 50em) {
+    .post-content {
+        text-align: center;
+    }   
+    .disclaimer {
+        text-align: center;
+    }   
+    .blog-post-wrapper {
+        max-width: 90%;
+    }   
 }
