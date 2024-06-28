@@ -198,6 +198,10 @@ p {
     gap: 3rem;
 }
 
+.bg-section{
+    padding: 3rem 0;
+}
+
 /* Project */
 
 /* Header */
@@ -384,8 +388,7 @@ p {
     width: 25%;
     margin: 0 auto;
     padding: auto;
-    display: block;
-    
+    display: block;   
 }
 
 .perfil--social-links{
@@ -458,12 +461,7 @@ animation: scroll-down 1.5s infinite;
 
 /* HOME ABOUT ME*/
 .home-about-me{
-    padding-top: 4.5rem;
-    /* background: linear-gradient(var(--clr-accent-300), var(--clr-primary-400));
-    padding-block: min(5vh, 5rem);
-    background-image: url(../assets/img/home-bio-no-bg-no-shadow.png);
-    background-repeat:no-repeat;
-    background-position: -1% 50%; */
+    padding: 3rem 0;
 }
 .home-about-me-container{
     padding: 3rem 0;
@@ -474,8 +472,40 @@ animation: scroll-down 1.5s infinite;
     text-align: right;
     font-style: italic;
     color: var(--clr-accent-400);
+    font-size: var(--fs-400);
+    padding-top: .8rem;
 }
 
+.home-about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+}
+.home-about-me-img{
+    width: auto;
+    max-width: 530px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: auto;
+    margin: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 35rem) {
+    .home-about-me-grid {
+        display: block;
+    }
+    .home-about-me-img{
+        width: 280px;
+    }
+    .about-me-text {
+        padding-bottom: 2rem;
+    }
+}
 
 
 /* HOME SERVICES */
@@ -486,7 +516,6 @@ animation: scroll-down 1.5s infinite;
 
 .home-services-init {
     padding: 3rem 0;
-    /* padding-block: min(15vh, 15rem); */
 }
 
 .home-services--title{
@@ -513,15 +542,6 @@ animation: scroll-down 1.5s infinite;
 }
 
 /* END HOME SERVICES */
-
-
-
-.home-why {
-    padding: 3rem 0;
-}
-.home-why-container{
-    padding: 3rem 0;
-}
 .home-why-background{
     position: relative;
 }
@@ -534,28 +554,37 @@ animation: scroll-down 1.5s infinite;
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    background-image: url("../assets/img/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg");
+    background-image: url("../assets/img/background/dea-bendata.bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
-
 .home-why-container{
     position: relative;
     padding: 10rem 0;
-    /* background: url("../assets/img/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg") repeat fixed 100%; */
-    /* width:80%;  */
-    /* height:80%; */
-    /* background-size:cover; */
-    /* padding: 10rem 0; */
-    /* height: 10rem; */
 }
 
 
-.home-collegues {
-    padding: 3rem 0;
+.home-collegues-background{
+    position: relative;
+}
+.home-collegues-background::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("../assets/img/background/court.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .home-collegues-container{
-    padding: 3rem 0;
+    position: relative;
+    padding: 10rem 0;
 }
 
 .home-footer {
