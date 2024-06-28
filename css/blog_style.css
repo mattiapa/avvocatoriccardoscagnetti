@@ -194,6 +194,7 @@ p {
     transition: all .3s;
     padding: 0.3rem 0.3rem;
     border-radius: .3rem;
+    max-width: 250px; /*TODO: controlla questo parametro con piu articoli*/
 }
 .article:hover {
     transform: translateY(-4px);
