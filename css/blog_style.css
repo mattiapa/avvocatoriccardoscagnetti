@@ -23,6 +23,7 @@
 
     --fw-regular: 400;
     --fw-semi-bold: 500;
+    --fw-semi-bold-larger: 600;
     --fw-bold: 700;
 
     --fs-300: .8125rem;
@@ -135,7 +136,7 @@ h1 {
     text-transform: uppercase;
     color: var(--clr-accent-400);
     font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-300);
+    font-size: var(--fs-600);
     font-family: var(--ff-accent);
 
 }
@@ -225,13 +226,9 @@ p {
 }
 
 .article-date {
-    /* display: inline-flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
     color: var(--clr-accent-400);
     padding: 0.5rem 0;
     font-size: var(--fs-300);
-    /* flex: auto; */
 }
 .article-date ul {
     display: inline-flex;
@@ -243,9 +240,15 @@ p {
     padding: 0;
     margin: 0;
 }
-.article-title a {
-    cursor: pointer;
+.article-title:hover {
+    color: var(--clr-accent-400);
+    font-weight: var(--fw-semi-bold-larger);
+    transition: ease-in-out 250ms;
 }
+.article-title-link {
+    text-decoration: none;
+}
+
 .article-preview {
     font-size: var(--fs-300);
     padding-left: .5rem;
