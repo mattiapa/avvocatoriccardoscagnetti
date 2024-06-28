@@ -198,6 +198,10 @@ p {
     gap: 3rem;
 }
 
+.bg-section{
+    padding: 3rem 0;
+}
+
 /* Project */
 
 /* Header */
@@ -364,6 +368,24 @@ p {
     padding: 3rem 0;
 }
 
+/* .home-perfil-background {
+    position: relative;
+}
+.home-perfil-background::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("../assets/img/background/cassazione.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
 .perfil-image{
     display: block;
     max-width: 450px;
@@ -384,8 +406,7 @@ p {
     width: 25%;
     margin: 0 auto;
     padding: auto;
-    display: block;
-    
+    display: block;   
 }
 
 .perfil--social-links{
@@ -513,15 +534,6 @@ animation: scroll-down 1.5s infinite;
 }
 
 /* END HOME SERVICES */
-
-
-
-.home-why {
-    padding: 3rem 0;
-}
-.home-why-container{
-    padding: 3rem 0;
-}
 .home-why-background{
     position: relative;
 }
@@ -534,28 +546,37 @@ animation: scroll-down 1.5s infinite;
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    background-image: url("../assets/img/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg");
+    background-image: url("../assets/img/background/dea-bendata.bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
-
 .home-why-container{
     position: relative;
     padding: 10rem 0;
-    /* background: url("../assets/img/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg") repeat fixed 100%; */
-    /* width:80%;  */
-    /* height:80%; */
-    /* background-size:cover; */
-    /* padding: 10rem 0; */
-    /* height: 10rem; */
 }
 
 
-.home-collegues {
-    padding: 3rem 0;
+.home-collegues-background{
+    position: relative;
+}
+.home-collegues-background::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("../assets/img/background/court.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .home-collegues-container{
-    padding: 3rem 0;
+    position: relative;
+    padding: 10rem 0;
 }
 
 .home-footer {
