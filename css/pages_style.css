@@ -5,6 +5,7 @@
     --clr-primary-400: rgb(51, 51, 51);
     
     --clr-accent-400: rgb(19, 66, 107);
+    --clr-accent-complementary: #853C09;
     --clr-accent-300: rgb(19, 66, 107);
 
     --white-color: rgb(255,255,255);
@@ -175,7 +176,7 @@ p {
     justify-content: flex-end;
 }
 .close:hover {
-    color: var(--clr-primary-400);
+    color: var(--clr-accent-complementary);
     font-size: 3.2rem;
     transition: ease-in-out 200ms;
 }

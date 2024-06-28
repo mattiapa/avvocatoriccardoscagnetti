@@ -5,6 +5,7 @@
     --clr-primary-400: rgb(51, 51, 51);
     
     --clr-accent-400: rgb(19, 66, 107);
+    --clr-accent-complementary: #853C09;
     --clr-accent-300: rgb(19, 66, 107);
 
     --white-color: rgb(255,255,255);
@@ -186,9 +187,9 @@ p {
     text-transform: uppercase;
     color: rgba(255,255,255,1);
 }
-.unstyled-list a:hover, .unstyled-list a:focus {
+.standard-contact a:hover, .standard-contact a:focus {
     /* color: rgba(255,255,255,.6); */
-    color: var(--clr-primary-400);
+    color: var(--clr-accent-complementary);
     transition: all ease-in-out 250ms;
 }
 
@@ -294,6 +295,6 @@ p {
 }
 
 .contact-form button:hover{
-    background-color: var(--clr-primary-400);
+    background-color: var(--clr-accent-complementary);
     transition: ease-in-out 200ms;
 }
